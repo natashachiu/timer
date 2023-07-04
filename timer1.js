@@ -7,7 +7,7 @@ const timer = (input) => {
       continue;
 
     const time = Number(num) * 1000;
-    setTimeout(() => process.stdout.write('.'), time);
+    setTimeout(() => process.stdout.write('\x07'), time);
   }
 };
 
